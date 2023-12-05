@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Туроператор Lagoona</title>
 </head>
 
@@ -17,9 +19,9 @@
         <a class="header-phone" href="tel:+74953225448">+7 495 322-54-48</a>
       </address>
       <a class="header-link" href="#">Личный кабинет</a>
-      <div class="nav-container">
+      <div class="nav-container flex">
         <nav class="header-nav">
-          <ul class="header-list list-reset">
+          <ul class="header-list list-reset flex">
             <li class="header-list-item">
               <a href="#about" class="header-link">
                 О&nbsp;нас
@@ -52,10 +54,10 @@
             </li>
           </ul>
         </nav>
-        <button class="btn header-btn">
+        <button class="btn-reset btn tour-btn">
           Хочу тур
         </button>
-        <button class="btn header-btn">
+        <button class="btn-reset btn callback-phone-btn">
           Обратный звонок
         </button>
       </div>
@@ -63,48 +65,51 @@
   </header>
 
   <main>
-    <section class="special-offers">
+    <section class="special-offers container">
       <h2 class="section-title">
         Спецпредложения
       </h2>
-      <ul class="list-specia list-resetl">
-        <li class="special-list-pointer">
-          <article class="special-content">
-            <h3 class="special-descr">
-              Мальдивские острова
-            </h3>
-            <p class="special-price">
-              от&nbsp;55&nbsp;000&nbsp;₽
-            </p>
-            <a class="special-link" href="#">Подробнее</a>
-          </article>
-        </li>
-        <li class="special-list-pointer">
-          <article class="special-content">
-            <h3 class="special-descr">
-              Горящий тур на&nbsp;остров Крит
-            </h3>
-            <p class="special-price">
-              от&nbsp;30&nbsp;000&nbsp;₽
-            </p>
-            <a class="special-link" href="#">Подробнее</a>
-          </article>
-        </li>
-        <li class="special-list-pointer">
-          <article class="special-content">
-            <h3 class="special-descr-last">
-              Номера категории люкс
-            </h3>
-            <p class="special-price-last">
-              от&nbsp;5&nbsp;000&nbsp;₽
-            </p>
-            <a class="special-link" href="#">Подробнее</a>
-          </article>
-        </li>
-      </ul>
+      <div class="flex">
+        <ul class="list-special list-reset flex">
+          <li class="special-list-pointer">
+            <article class="special-content">
+              <h3 class="special-descr">
+                Мальдивские острова
+              </h3>
+              <p class="special-price">
+                от&nbsp;55&nbsp;000&nbsp;₽
+              </p>
+              <a class="special-link" href="#">Подробнее</a>
+            </article>
+          </li>
+          <li class="special-list-pointer">
+            <article class="special-content">
+              <h3 class="special-descr">
+                Горящий тур на&nbsp;остров Крит
+              </h3>
+              <p class="special-price">
+                от&nbsp;30&nbsp;000&nbsp;₽
+              </p>
+              <a class="special-link" href="#">Подробнее</a>
+            </article>
+          </li>
+        </ul>
+        <!-- <li class="special-list-pointer special-list-pointer-large"> -->
+        <article class="special-content-large">
+          <h3 class="special-descr-large">
+            Номера категории люкс
+          </h3>
+          <p class="special-price-large">
+            от&nbsp;5&nbsp;000&nbsp;₽
+          </p>
+          <a class="special-link" href="#">Подробнее</a>
+        </article>
+        <!-- </li> -->
+        <!-- </ul> -->
+      </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="about container">
       <div class="about-container">
         <h2 class="section-title">
           О&nbsp;нас
@@ -121,15 +126,15 @@
       </div>
     </section>
 
-    <section id="services" class="services">
+    <section id="services" class="services container">
       <h2 class="section-title">
         Услуги
       </h2>
-      <ul class="services-li list-resetst">
+      <ul class="services-list list-reset flex">
         <li class="services-list-pointer">
           <article class="container-services">
             <img src="img/service-img-1.jpg" alt="Фото статьи" class="services-img">
-            <a class="services-link" href="#"> Эксклюзивное обслуживание </a>
+            <a class="services-link" href="#"> Эксклюзивное обслуживание</a>
             <p class="services-text">
               Эксклюзивное обслуживание
               Равным образом постоянный количественный рост и&nbsp;сфера нашей активности
@@ -139,16 +144,17 @@
         <li class="services-list-pointer">
           <article class="container-services">
             <img src="img/service-img-2.jpg" alt="Фото статьи" class="services-img">
-            <a class="services-link" href="#">Аренда банкетных залов</a>
+            <a class="services-link" href="#"> Аренда банкетных залов </a>
             <p class="services-text">
               Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
             </p>
+
           </article>
         </li>
         <li class="services-list-pointer">
           <article class="container-services">
             <img src="img/service-img-3.jpg" alt="Фото статьи" class="services-img">
-            <a class="services-link" href="#">Сауны, бассейны, бани, фитнес-залы</a>
+            <a class="services-link" href="#"> Сауны, бассейны, бани, фитнес-залы</a>
             <p class="services-text">
               Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию
               позиции
@@ -158,7 +164,7 @@
         <li class="services-list-pointer">
           <article class="container-services">
             <img src="img/service-img-4.jpg" alt="Фото статьи" class="services-img">
-            <a class="services-link" href="#"> Охраняемые автомобильные стоянки </a>
+            <a class="services-link" href="#"> Охраняемые автомобильные стоянки</a>
             <p class="services-text">
               Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию
               позиции
@@ -168,12 +174,12 @@
       </ul>
     </section>
 
-    <section id="advantages" class="advantages">
+    <section id="advantages" class="advantages container">
       <h2 class="advantages">
         Преимущества
       </h2>
 
-      <ul class="advantages- list-resetlist">
+      <ul class="advantages-list list-reset flex">
         <li class="advantages-list-pointer">
           <article class="container-advantages">
             <svg class="advantages-svg" width="64" height="66" viewBox="0 0 64 66" fill="none"
@@ -430,7 +436,8 @@
         </li>
         <li class="advantages-list-pointer">
           <article class="container-advantages">
-            <svg width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="advantages-svg" width="64" height="66" viewBox="0 0 64 66" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M54.025 49.7191H9.97503C8.96253 49.7191 8.15002 48.8812 8.15002 47.8371V45.8519C8.15002 32.291 18.85 21.2566 32 21.2566C34.4875 21.2566 36.9375 21.6562 39.2875 22.4296C40.25 22.7519 40.775 23.8089 40.475 24.8015C40.1625 25.7941 39.1375 26.3355 38.175 26.0261C36.1875 25.3687 34.1125 25.0335 32 25.0335C20.8625 25.0335 11.8 34.3793 11.8 45.8648V45.9679H52.2V45.8648C52.2 40.2703 50.075 35.0109 46.225 31.0664C45.5125 30.3316 45.5 29.1457 46.2125 28.398C46.925 27.6632 48.075 27.6503 48.8 28.3851C53.35 33.0386 55.8625 39.239 55.8625 45.8519V47.8371C55.85 48.8812 55.0375 49.7191 54.025 49.7191Z"
                 fill="#F0BF5F" />
@@ -474,7 +481,8 @@
         </li>
         <li class="advantages-list-pointer">
           <article class="container-advantages">
-            <svg width="67" height="66" viewBox="0 0 67 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="advantages-svg" width="67" height="66" viewBox="0 0 67 66" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M60.5094 61.5527H6.49062C2.91816 61.5527 0 58.691 0 55.159V10.841C0 7.30898 2.91816 4.44727 6.49062 4.44727H41.9404C42.9611 4.44727 43.7855 5.25937 43.7855 6.26484C43.7855 7.27031 42.9611 8.08242 41.9404 8.08242H6.49062C4.94648 8.08242 3.69023 9.31992 3.69023 10.841V55.159C3.69023 56.6801 4.94648 57.9176 6.49062 57.9176H60.5094C62.0535 57.9176 63.3098 56.6801 63.3098 55.159V10.841C63.3098 9.31992 62.0535 8.08242 60.5094 8.08242H52.5793C51.5586 8.08242 50.7342 7.27031 50.7342 6.26484C50.7342 5.25937 51.5586 4.44727 52.5793 4.44727H60.5094C64.0949 4.44727 67 7.32187 67 10.841V55.159C67 58.691 64.0818 61.5527 60.5094 61.5527Z"
                 fill="#2D527C" />
@@ -516,7 +524,8 @@
         </li>
         <li class="advantages-list-pointer">
           <article class="container-advantages">
-            <svg width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="advantages-svg" width="64" height="66" viewBox="0 0 64 66" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_370726_480)">
                 <path
                   d="M32.7875 29.5453C31.8 29.5453 30.9875 28.7203 30.9875 27.6891V6.63867C31 3.32578 33.775 0.644531 37.2 0.644531C40.625 0.644531 43.4 3.33867 43.4 6.65156C43.4 7.66992 42.6 8.50781 41.6 8.50781C40.6 8.50781 39.8 7.68281 39.8 6.65156C39.8 5.38828 38.625 4.35703 37.1875 4.35703C35.75 4.35703 34.575 5.38828 34.575 6.65156V27.702C34.5875 28.7074 33.7875 29.5453 32.7875 29.5453Z"
@@ -553,33 +562,37 @@
       </ul>
     </section>
 
-    <section id="accommodation" class="accommodation">
+    <section id="accommodation" class="accommodation container">
       <h2 class="section-title">
         Размещение
       </h2>
-      <ul class="accommodati list-reseton-list">
+      <ul class="accommodation-list list-reset flex">
         <li class="accommodation-list-pointer">
           <article class="accommodation-conteiner">
             <img src="img/hostel-1.jpg" alt="Фото отеля" class="accommodation-img">
-            <span class="accommodation-text-first">
-              от
-            </span>
-            <p class="accommodation-price">
-              4&nbsp;698&nbsp;₽
-            </p>
-            <span class="accommodation-text-last">/ ночь</span>
-            <img class="accommodation-ster" src="img/star.png" alt="Рейтинг фильма 4 из 5">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star-null.png" alt="">
+            <div class="accommodation-div">
+              <span class="accommodation-text-first">
+                от
+              </span>
+              <p class="accommodation-price">
+                4&nbsp;698&nbsp;₽
+              </p>
+              <span class="accommodation-text-last">/ ночь</span>
+              <div class="accommodation-div-start">
+                <img class="accommodation-star" src="img/star.png" alt="Рейтинг фильма 4 из 5">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star-null.png" alt="">
+              </div>
+            </div>
             <h3 class="accommodation-title-h3">
               Lagoona espa&ntilde;ola
             </h3>
             <p class="accommodation-location">
               Барселона, Испания
             </p>
-            <button class="btn accommodation-btn">
+            <button class="btn-reset btn-accommodation btn">
               Номера
             </button>
           </article>
@@ -587,25 +600,29 @@
         <li class="accommodation-list-pointer">
           <article class="accommodation-conteiner">
             <img src="img/hostel-2.jpg" alt="Фото отеля" class="accommodation-img">
-            <span class="accommodation-text-first">
-              от
-            </span>
-            <p class="accommodation-price">
-              5&nbsp;148&nbsp;₽
-            </p>
-            <span class="accommodation-text-last">/ ночь</span>
-            <img class="accommodation-ster" src="img/star.png" alt="Рейтинг фильма 4 из 5">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star-null.png" alt="">
+            <div class="accommodation-div">
+              <span class="accommodation-text-first">
+                от
+              </span>
+              <p class="accommodation-price">
+                5&nbsp;148&nbsp;₽
+              </p>
+              <span class="accommodation-text-last">/ ночь</span>
+              <div class="accommodation-div-start">
+                <img class="accommodation-star" src="img/star.png" alt="Рейтинг фильма 4 из 5">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star-null.png" alt="">
+              </div>
+            </div>
             <h3 class="accommodation-title-h3">
               Lagoona son t&iacute;picas
             </h3>
             <p class="accommodation-location">
               Барселона, Испания
             </p>
-            <button class="btn accommodation-btn">
+            <button class="btn-reset btn-accommodation btn">
               Номера
             </button>
           </article>
@@ -613,25 +630,29 @@
         <li class="accommodation-list-pointer">
           <article class="accommodation-conteiner">
             <img src="img/hostel-3.jpg" alt="Фото отеля" class="accommodation-img">
-            <span class="accommodation-text-first">
-              от
-            </span>
-            <p class="accommodation-price">
-              6&nbsp;254&nbsp;₽
-            </p>
-            <span class="accommodation-text-last">/ ночь</span>
-            <img class="accommodation-ster" src="img/star.png" alt="Рейтинг фильма 5 из 5">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
+            <div class="accommodation-div">
+              <span class="accommodation-text-first">
+                от
+              </span>
+              <p class="accommodation-price">
+                6&nbsp;254&nbsp;₽
+              </p>
+              <span class="accommodation-text-last">/ ночь</span>
+              <div class="accommodation-div-start">
+                <img class="accommodation-star" src="img/star.png" alt="Рейтинг фильма 5 из 5">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+              </div>
+            </div>
             <h3 class="accommodation-title-h3">
               Lagoona de&nbsp;la&nbsp;guerra
             </h3>
             <p class="accommodation-location">
               Барселона, Испания
             </p>
-            <button class="btn accommodation-btn">
+            <button class="btn-reset btn-accommodation btn">
               Номера
             </button>
           </article>
@@ -639,25 +660,29 @@
         <li class="accommodation-list-pointer">
           <article class="accommodation-conteiner">
             <img src="img/hostel-4.jpg" alt="Фото отеля" class="accommodation-img">
-            <span class="accommodation-text-first">
-              от
-            </span>
-            <p class="accommodation-price">
-              6&nbsp;320&nbsp;₽
-            </p>
-            <span class="accommodation-text-last">/ ночь</span>
-            <img class="accommodation-ster" src="img/star.png" alt="Рейтинг фильма 5 из 5">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
+            <div class="accommodation-div">
+              <span class="accommodation-text-first">
+                от
+              </span>
+              <p class="accommodation-price">
+                6&nbsp;320&nbsp;₽
+              </p>
+              <span class="accommodation-text-last">/ ночь</span>
+              <div class="accommodation-div-start">
+                <img class="accommodation-star" src="img/star.png" alt="Рейтинг фильма 5 из 5">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+              </div>
+            </div>
             <h3 class="accommodation-title-h3">
               Lagoona mentira piadosa
             </h3>
             <p class="accommodation-location">
               Барселона, Испания
             </p>
-            <button class="btn accommodation-btn">
+            <button class="btn-reset btn-accommodation btn">
               Номера
             </button>
           </article>
@@ -665,25 +690,29 @@
         <li class="accommodation-list-pointer">
           <article class="accommodation-conteiner">
             <img src="img/hostel-5.jpg" alt="Фото отеля" class="accommodation-img">
-            <span class="accommodation-text-first">
-              от
-            </span>
-            <p class="accommodation-price">
-              6&nbsp;457&nbsp;₽
-            </p>
-            <span class="accommodation-text-last">/ ночь</span>
-            <img class="accommodation-ster" src="img/star.png" alt="Рейтинг фильма 4 из 5">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star-null.png" alt="">
+            <div class="accommodation-div">
+              <span class="accommodation-text-first">
+                от
+              </span>
+              <p class="accommodation-price">
+                6&nbsp;457&nbsp;₽
+              </p>
+              <span class="accommodation-text-last">/ ночь</span>
+              <div class="accommodation-div-start">
+                <img class="accommodation-star" src="img/star.png" alt="Рейтинг фильма 4 из 5">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star-null.png" alt="">
+              </div>
+            </div>
             <h3 class="accommodation-title-h3">
               Lagoona empujar la&nbsp;creatividad
             </h3>
             <p class="accommodation-location">
               Барселона, Испания
             </p>
-            <button class="btn accommodation-btn">
+            <button class="btn-reset btn-accommodation btn">
               Номера
             </button>
           </article>
@@ -691,25 +720,29 @@
         <li class="accommodation-list-pointer">
           <article class="accommodation-conteiner">
             <img src="img/hostel-6.jpg" alt="Фото отеля" class="accommodation-img">
-            <span class="accommodation-text-first">
-              от
-            </span>
-            <p class="accommodation-price">
-              6&nbsp;320&nbsp;₽
-            </p>
-            <span class="accommodation-text-last">/ ночь</span>
-            <img class="accommodation-ster" src="img/star.png" alt="Рейтинг фильма 4 из 5">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star-null.png" alt="">
+            <div class="accommodation-div">
+              <span class="accommodation-text-first">
+                от
+              </span>
+              <p class="accommodation-price">
+                6&nbsp;320&nbsp;₽
+              </p>
+              <span class="accommodation-text-last">/ ночь</span>
+              <div class="accommodation-div-start">
+                <img class="accommodation-star" src="img/star.png" alt="Рейтинг фильма 4 из 5">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star-null.png" alt="">
+              </div>
+            </div>
             <h3 class="accommodation-title-h3">
               Lagoona el&nbsp;retorno
             </h3>
             <p class="accommodation-location">
               Барселона, Испания
             </p>
-            <button class="btn accommodation-btn">
+            <button class="btn-reset btn-accommodation btn">
               Номера
             </button>
           </article>
@@ -717,25 +750,29 @@
         <li class="accommodation-list-pointer">
           <article class="accommodation-conteiner">
             <img src="img/hostel-7.jpg" alt="Фото отеля" class="accommodation-img">
-            <span class="accommodation-text-first">
-              от
-            </span>
-            <p class="accommodation-price">
-              6&nbsp;505&nbsp;₽
-            </p>
-            <span class="accommodation-text-last">/ ночь</span>
-            <img class="accommodation-ster" src="img/star.png" alt="Рейтинг фильма 5 из 5">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
+            <div class="accommodation-div">
+              <span class="accommodation-text-first">
+                от
+              </span>
+              <p class="accommodation-price">
+                6&nbsp;505&nbsp;₽
+              </p>
+              <span class="accommodation-text-last">/ ночь</span>
+              <div class="accommodation-div-start">
+                <img class="accommodation-star" src="img/star.png" alt="Рейтинг фильма 5 из 5">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+              </div>
+            </div>
             <h3 class="accommodation-title-h3">
               Lagoona mentira piadosa
             </h3>
             <p class="accommodation-location">
               Барселона, Испания
             </p>
-            <button class="btn accommodation-btn">
+            <button class="btn-reset btn-accommodation btn">
               Номера
             </button>
           </article>
@@ -743,37 +780,35 @@
         <li class="accommodation-list-pointer">
           <article class="accommodation-conteiner">
             <img src="img/hostel-8.jpg" alt="Фото отеля" class="accommodation-img">
-            <span class="accommodation-text-first">
-              от
-            </span>
-            <p class="accommodation-price">
-              6&nbsp;824&nbsp;₽
-            </p>
-            <span class="accommodation-text-last">/ ночь</span>
-            <img class="accommodation-ster" src="img/star.png" alt="Рейтинг фильма 4 из 5">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star.png" alt="">
-            <img class="accommodation-ster" src="img/star-null.png" alt="">
+            <div class="accommodation-div">
+              <span class="accommodation-text-first">
+                от
+              </span>
+              <p class="accommodation-price">
+                6&nbsp;824&nbsp;₽
+              </p>
+              <span class="accommodation-text-last">/ ночь</span>
+              <div class="accommodation-div-start">
+                <img class="accommodation-star" src="img/star.png" alt="Рейтинг фильма 4 из 5">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star.png" alt="">
+                <img class="accommodation-star" src="img/star-null.png" alt="">
+              </div>
+            </div>
             <h3 class="accommodation-title-h3">
               Lagoona suerte sigui&oacute; siempre
             </h3>
             <p class="accommodation-location">
               Барселона, Испания
             </p>
-            <button class="btn accommodation-btn">
+            <button class="btn-reset btn-accommodation btn">
               Номера
             </button>
           </article>
         </li>
         <li class="accommodation-list-pointer">
-          <p class="accommodation-more">
-            Посмотреть все варианты
-          </p>
-          <svg class="svg-arrow" width="11" height="18" viewBox="0 0 11 18" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#F0BF5F" stroke-width="2" />
-          </svg>
+          <a href="#" class="accommodation-more"> Посмотреть все варианты </a>
         </li>
       </ul>
     </section>
