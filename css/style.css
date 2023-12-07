@@ -1,4 +1,5 @@
 html {
+  background-color: #F1F1F1;
   box-sizing: border-box;
 }
 
@@ -8,8 +9,32 @@ html {
   box-sizing: inherit;
 }
 
+@font-face {
+  font-family: "MullerMedium";
+  src:
+    local("MullerMedium"),
+    url("../font/MullerMedium.woff2") format("woff2"),
+    url("../font/MullerMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MullerRegular";
+  src:
+    local("MullerRegular"),
+    url("../font/MullerRegular.woff") format("woff2"),
+    url("../font/MullerRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MullerBold";
+  src:
+    local("MullerBold"),
+    url("../font/MullerBold.woff2") format("woff2"),
+    url("../font/MullerBold.woff") format("woff");
+}
+
 body {
-  font-family: Arial, Verdana, sans-serif;
+  font-family: "MullerRegular", Arial, Verdana, sans-serif;
 }
 
 a {
@@ -46,8 +71,19 @@ img {
 }
 
 .section-title {
+
+  display: block;
+  color: #333;
   margin: 70px 0 20px 40px;
-  display: block
+  font-size: 40px;
+}
+
+.btn {
+  display: inline-block;
+  align-items: flex-start;
+  padding: 13px 20px;
+  border-radius: 10px;
+  border: 1px solid #C93
 }
 
 /* header */
@@ -60,10 +96,6 @@ img {
   margin-right: auto;
 }
 
-.header-nav {
-  margin-right: auto;
-}
-
 .tour-btn {
   margin-left: 114px;
 }
@@ -73,18 +105,66 @@ img {
 }
 
 .nav-container {
+  flex-grow: 1;
   margin-top: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.header-link-lk {
+  display: inline-block;
+  min-width: 155px;
+  height: 24px;
+  margin: 17px 0 0 0px;
+  padding-top: 5px;
+  padding-left: 29px;
+  background-position: center left;
+  background-repeat: no-repeat;
+  color: #C93;
+  font-size: 16px;
+  font-weight: 400;
+  background-image: url("../img/header_img.svg");
 }
 
 .header-link {
-  margin: 17px 0 0 0px;
+  display: inline-block;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.header-phone {
+  font-family: "MullerMedium";
+  font-style: normal;
+  font-size: 20px;
+  color: #666;
+}
+
+.header-btn {
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 /* special */
 .special-list-pointer {
   width: 573px;
   min-height: 258px;
-  outline: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0.00) 65.7%);
+}
+
+.special-img-1 {
+  background-image: url('../img/special-back-1.jpg');
+}
+
+.special-img-2 {
+  background-image: url('../img/special-back-2.jpg');
+
+}
+
+.special-img-3 {
+  background-image: url('../img/special-back-3.jpg');
 }
 
 .special-list-pointer:not(:last-child) {
@@ -95,8 +175,10 @@ img {
   display: inline-block;
   width: 573px;
   min-height: 540px;
-  outline: auto;
   margin-left: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
 }
 
 .list-special {
@@ -105,17 +187,24 @@ img {
 }
 
 .special-descr {
-  margin: 45px 108px 0 45px;
+  width: 420px;
+  margin: 40px 0px 0 45px;
+  font-family: "MullerBold";
+  color: #FFF;
+  font-size: 40px;
 }
 
 .special-price {
   margin: 15px 0 0 45px;
+  color: #FFF;
+  font-size: 20px;
 }
 
 .special-link {
   display: inline-block;
   margin: 47px 0 0 45px;
   padding-right: 20px;
+  font-size: 16px;
   background-position: right center;
   background-repeat: no-repeat;
   color: #C93;
@@ -124,16 +213,24 @@ img {
 
 .special-descr-large {
   margin: 212px 0 0 45px;
+  font-family: "MullerBold";
+  color: #FFF;
+  font-size: 60px;
 }
 
 .special-price-large {
   margin: 15px 0 0 45px;
+  color: #FFF;
+  font-size: 30px;
 }
 
 /* about */
 .about-text {
   margin: 0;
   width: 888px;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000;
 }
 
 /* services */
@@ -145,7 +242,7 @@ img {
 .services-list-pointer {
   width: 573px;
   min-height: 330px;
-  outline: auto;
+  background-color: #fff;
 }
 
 .services-list-pointer:nth-child(n+3) {
@@ -156,6 +253,9 @@ img {
   display: inline-block;
   margin: 26px 0 0 45px;
   padding-right: 20px;
+  font-family: "MullerMedium";
+  font-size: 20px;
+  line-height: 200%;
   background-position: right center;
   background-repeat: no-repeat;
   color: #C93;
@@ -163,7 +263,11 @@ img {
 }
 
 .services-text {
+  width: 402px;
   margin: 0 0 0 45px;
+  color: #000;
+  font-size: 16px;
+  line-height: 200%
 }
 
 /* advantages */
@@ -175,7 +279,8 @@ img {
 .advantages-list-pointer {
   width: 276px;
   min-height: 276px;
-  outline: auto;
+  border-radius: 15px;
+  background: #FFF;
 }
 
 .advantages-list-pointer:nth-child(n+5) {
@@ -189,19 +294,36 @@ img {
 .advantages-text {
   margin: 10px 0 0 45px;
   width: 189px;
+  font-size: 16px;
+  line-height: 200%;
+}
+
+.services-img {
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* accommodation */
 .accommodation-list {
   flex-wrap: wrap;
-
   justify-content: space-between;
 }
 
 .accommodation-list-pointer {
   width: 374px;
   min-height: 440px;
-  outline: auto;
+  border-radius: 15px;
+  background: #FFF;
+}
+
+.accommodation-text-first {
+  font-size: 16px;
+  color: #999;
+}
+
+.accommodation-text-last {
+  font-size: 16px;
+  color: #000;
 }
 
 .accommodation-img {
@@ -211,10 +333,14 @@ img {
 
 .accommodation-price {
   display: inline-block;
+  margin: 0;
+  color: #000;
+  font-family: "MullerBold";
+  font-size: 20px;
 }
 
 .accommodation-div {
-  margin: 36px 0 0 45px;
+  margin: 32px 0 0 45px;
 }
 
 .accommodation-div-start {
@@ -223,11 +349,15 @@ img {
 }
 
 .accommodation-title-h3 {
-  margin: 0 0 0 45px;
+  margin: 16px 0 0 45px;
+  font-size: 16px;
+  color: #000;
 }
 
 .accommodation-location {
   margin: 16px 0 0 45px;
+  font-size: 16px;
+  color: #999;
 }
 
 .btn-accommodation {
@@ -238,7 +368,21 @@ img {
   margin-top: 24px;
 }
 
+.accommodation-list-pointer:last-child {
+  background-image: url('../img/accommodation-back.jpg');
+  background-repeat: unset;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .accommodation-more {
   display: inline-block;
   margin: 373px 0 0 54px;
+  padding-right: 20px;
+  font-size: 20px;
+  font-family: "MullerMedium";
+  background-position: center right;
+  background-repeat: no-repeat;
+  color: #FFF;
+  background-image: url("../img/arrow-white.svg");
 }
