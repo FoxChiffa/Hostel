@@ -386,3 +386,256 @@ img {
   color: #FFF;
   background-image: url("../img/arrow-white.svg");
 }
+
+/* tour */
+.tour-container {
+  border-radius: 15px;
+  background: #E9E9E9;
+  height: 256px;
+}
+
+.tour-title {
+  padding: 45px 0 0 40px;
+}
+
+.form-top {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 45px 45px 45px;
+  width: 1080px;
+  height: 106px;
+  border-radius: 15px;
+  background: #FFF;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-text {
+  font-size: 12px;
+  color: #000;
+}
+
+.form-input-text {
+  margin-top: 15px;
+  margin-left: -5px;
+  width: 159px;
+  color: #000;
+  font-size: 16px;
+  border: 0;
+}
+
+.form-border {
+  border-bottom: solid 1px;
+  border-color: #E9E9E9;
+}
+
+.form-number {
+  width: 106px;
+}
+
+.form-btn {
+  width: 108px;
+  height: 42px;
+}
+
+/* contacts */
+.contacts-text {
+  margin-left: 45px;
+  width: 229px;
+  color: #000;
+  font-family: "MullerBold";
+  font-size: 20px;
+}
+
+.adress-text {
+  color: #000;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.contacts-tel {
+  font-size: 16px;
+  color: #CC9933;
+  line-height: 150%;
+}
+
+.contacts-email-text {
+  margin: 0;
+  color: #999;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.contacts-time {
+  color: #000;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.contacts-left-div:not(:last-child) {
+  border-bottom: solid 1px #E9E9E9;
+}
+
+.contacts-div {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  background: #FFF;
+}
+
+.contacts-left-div {
+  display: flex;
+}
+
+.contacts-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 47%;
+}
+
+.contacts-right {
+  margin: 45px;
+  width: 51%;
+}
+
+.div-right-text {
+  margin-left: 83px;
+}
+
+.div-left-text {
+  display: inline-block;
+  width: 200px;
+}
+
+.contacts-left-div:not(:first-child) {
+  margin-top: 25px;
+}
+
+.contacts-tel-text {
+  margin: 0;
+}
+
+.contacts-btn {
+  display: flex;
+  margin-left: 45px;
+  min-width: 213px;
+  height: 70px;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #C93;
+  font-size: 16px;
+  color: #C93;
+}
+
+/* footer */
+.footer-div {
+  display: flex;
+  border-radius: 15px;
+  background: #333;
+}
+
+.footer-div-left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.footer-div-right {
+  flex-direction: column;
+  width: 40%;
+}
+
+.footer-text {
+  color: #FFF;
+  width: 302px;
+  font-size: 16px;
+  line-height: 190%;
+}
+
+.footer-link {
+  color: #C93;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.footer-text {
+  margin: 0;
+  margin-left: 45px;
+}
+
+.footer-text:not(:last-child) {
+  margin-top: 45px;
+}
+
+.footer-text:not(:first-child) {
+  margin-top: 37px;
+}
+
+.footer-link {
+  margin: 40px 0 45px 45px;
+}
+
+.footer-adress-text {
+  color: #FFF;
+  margin-top: 45px;
+  ;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.footer-div-tel {
+  margin-top: 15px;
+}
+
+.footer-div-email {
+  margin-top: 15px;
+}
+
+.footer-div {
+  background-image: url("../img/footer-1.svg");
+  background-position: 75% 100%;
+  background-repeat: no-repeat;
+}
+
+.social-link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-link-tripadvisor {
+  background-image: url("../img/socail-1.svg");
+}
+
+.social-link-odnok {
+  background-image: url("../img/socail-2.svg");
+}
+
+.social-link-vk {
+  background-image: url("../img/socail-3.svg");
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social {
+  margin-top: 45px;
+  margin-left: auto;
+}
+
+.social-item {
+  margin-top: 20px;
+  margin-right: 45px;
+}
