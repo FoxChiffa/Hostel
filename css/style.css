@@ -6,7 +6,7 @@
   --sandy-yellow-color: #F0BF5F;
   --black-color: #000;
   --light-gray-color: #999;
-  --light-gray-color: #999;
+  --smoky-white-color: #E9E9E9;
 }
 
 html {
@@ -556,6 +556,10 @@ img {
   color: var(--black-color);
   font-size: 16px;
   border: 0;
+}
+
+.pointer:hover {
+  cursor: pointer;
 }
 
 .form-border {
