@@ -159,45 +159,52 @@ img {
   fill: #CC9933;
   font-size: 16px;
   font-weight: 400;
-  transition: color 0.3s ease-in-out, border 0.3s ease-in-out, padding 0.3s ease-in-out, fill 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out, padding 0.3s ease-in-out, fill 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 .header-link-lk:focus {
   color: #CC9933;
   fill: #CC9933;
-  border: 1px solid var(--gold-color);
+  outline: 1px solid var(--gold-color);
+  outline-offset: 5px;
+  border: 0;
   padding-bottom: 5px;
 }
 
 .header-link-lk:hover {
   color: var(--sandy-yellow-color);
   fill: var(--sandy-yellow-color);
+  outline: 0;
 }
 
 .header-link-lk:active {
   color: var(--sand-color);
   fill: var(--sand-color);
+  outline: 0;
 }
 
 .header-link {
   display: inline-block;
   justify-content: center;
   font-size: 16px;
-  transition: color 0.3s ease-in-out, border 0.3s ease-in-out, padding 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out, padding 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 .header-link:focus {
   color: var(--gold-color);
-  border: 1px solid var(--gold-color);
-  padding: 5px;
+  outline: 1px solid var(--gold-color);
+  outline-offset: 5px;
+  border: 0;
 }
 
 .header-link:hover {
   color: var(--gold-color);
+  outline: 0;
 }
 
 .header-link:active {
   color: var(--sand-color);
+  outline: 0;
 }
 
 .header-phone {
@@ -205,22 +212,25 @@ img {
   font-style: normal;
   font-size: 20px;
   color: #666;
-  transition: color 0.3s ease-in-out, border 0.3s ease-in-out, padding 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out, padding 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 .header-phone:focus {
   outline: 0;
-  border: 1px solid var(--gold-color);
-  padding: 5px;
+  outline: 1px solid var(--gold-color);
+  outline-offset: 5px;
+  border: 0;
   color: #CC9933;
 }
 
 .header-phone:hover {
   color: #CC9933;
+  outline: 0;
 }
 
 .header-phone:active {
   color: var(--sand-color);
+  outline: 0;
 }
 
 .header-btn {
@@ -595,22 +605,25 @@ img {
   font-size: 16px;
   color: #CC9933;
   line-height: 150%;
-  transition: color 0.3s ease-in-out, border 0.3s ease-in-out, padding 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out, padding 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 .contacts-tel:focus {
   outline: 0;
-  border: 1px solid var(--gold-color);
-  padding: 5px;
+  outline: 1px solid var(--gold-color);
+  outline-offset: 5px;
+  border: 0;
   color: #CC9933;
 }
 
 .contacts-tel:hover {
   color: #CC9933;
+  outline: 0;
 }
 
 .contacts-tel:active {
   color: var(--sand-color);
+  outline: 0;
 }
 
 .contacts-email-text {
